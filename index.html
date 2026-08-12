@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0d0b09" />
+  <title>Tapri Wala — Old Songs • Chai • Yaadein</title>
+  <meta name="description" content="Tapri Wala — old Hindi songs, chai, memories and good vibes." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="grain"></div>
+
+  <header class="nav">
+    <a class="brand" href="#home">
+      <span class="brand-script">Tapri</span>
+      <span class="brand-bold">WALA</span>
+      <span class="cup">☕</span>
+    </a>
+    <nav>
+      <a href="#home">HOME</a>
+      <a href="#playlists">PLAYLISTS</a>
+      <a href="#about">ABOUT</a>
+      <a href="#listen">LISTEN</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+    <a class="community" href="#contact">☘ JOIN TAPRI COMMUNITY</a>
+    <button class="menu" aria-label="Open menu">☰</button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">OLD SONGS • GOOD VIBES • CHAI & YAARI</p>
+        <h1>TAPRI <span>WALA</span></h1>
+        <p class="tagline">Gaane jo dil ko choo jaaye <span>♥</span></p>
+        <p class="sub">A cozy corner for old Hindi songs, cutting chai and those memories that never get old.</p>
+        <button class="play-main" id="playMain"><span>▶</span> PLAY RADIO</button>
+        <p class="tiny">Demo player — add your own licensed audio/stream URL in <b>script.js</b>.</p>
+      </div>
+      <div class="hero-art">
+        <div class="sign">चाय<br><small>कटिंग 10/-</small></div>
+        <div class="lamp">💡</div>
+        <div class="radio">📻</div>
+        <div class="steam">〰〰</div>
+        <div class="road-light"></div>
+      </div>
+    </section>
+
+    <section class="player-wrap">
+      <div class="now-playing">
+        <div class="cover">📻</div>
+        <div class="track-info">
+          <span class="live">● LIVE</span>
+          <h3 id="songTitle">Tapri Wala Radio</h3>
+          <p id="songArtist">Old Hindi songs • Chai • Yaadein</p>
+        </div>
+        <div class="wave" id="wave">
+          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+        </div>
+        <button class="circle-play" id="circlePlay">▶</button>
+      </div>
+      <audio id="audio" preload="none"></audio>
+    </section>
+
+    <section class="section" id="playlists">
+      <div class="section-title"><span>〰</span> CHOOSE YOUR MOOD <span>☕</span></div>
+      <div class="cards">
+        <article class="card rain">
+          <div class="card-icon">☕</div>
+          <h3>CHAI &<br>BAARISH</h3>
+          <p>Feel the rain, old songs and cutting chai.</p>
+          <button onclick="selectMood('Chai & Baarish')">▶ PLAY</button>
+        </article>
+        <article class="card memories">
+          <div class="card-icon">📼</div>
+          <h3>YAADON KA<br>SAFAR</h3>
+          <p>Take a ride down the memory lane.</p>
+          <button onclick="selectMood('Yaadon Ka Safar')">▶ PLAY</button>
+        </article>
+        <article class="card dard">
+          <div class="card-icon">🏮</div>
+          <h3>DARD BHARE<br>NAGME</h3>
+          <p>Kuch gaane dil se seedhe dil tak.</p>
+          <button onclick="selectMood('Dard Bhare Nagme')">▶ PLAY</button>
+        </article>
+        <article class="card highway">
+          <div class="card-icon">🛣️</div>
+          <h3>HIGHWAY<br>RETRO</h3>
+          <p>Long drives, old songs and endless vibes.</p>
+          <button onclick="selectMood('Highway Retro')">▶ PLAY</button>
+        </article>
+        <article class="card classics">
+          <div class="card-icon">💿</div>
+          <h3>ALL TIME<br>CLASSICS</h3>
+          <p>Best of 70s, 80s and 90s Hindi hits.</p>
+          <button onclick="selectMood('All Time Classics')">▶ PLAY</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="listen" id="listen">
+      <div class="section-title"><span>〰</span> LISTEN TAPRI WALA ON <span>〰</span></div>
+      <p class="center-note">YouTube aur Spotify channels banne ke baad yahin direct links add karenge.</p>
+      <div class="platforms">
+        <a href="#" onclick="alert('YouTube link yahan add karenge.'); return false;" class="platform yt"><b>▶</b><span><strong>YouTube</strong><small>Watch & Listen</small></span></a>
+        <a href="#" onclick="alert('Spotify link yahan add karenge.'); return false;" class="platform sp"><b>●</b><span><strong>Spotify</strong><small>Listen on Spotify</small></span></a>
+        <a href="#" onclick="alert('YouTube Music link yahan add karenge.'); return false;" class="platform ym"><b>▶</b><span><strong>YouTube Music</strong><small>Listen on YT Music</small></span></a>
+      </div>
+    </section>
+
+    <section class="about-grid" id="about">
+      <div class="about-art">📻<br><span>☕</span></div>
+      <div class="about-copy">
+        <p class="eyebrow">KYA HAI <b>TAPRI WALA?</b></p>
+        <h2>Sirf radio nahi,<br><span>ek ehsaas hai.</span></h2>
+        <p>Chai ki tapri, doston ki yaari, purane gaane aur woh sukoon bhare pal — bas wahi sab yahan hai.</p>
+        <p>Lagao headphones, chai uthao aur old songs ko tumhe wapas un yaadon mein le jaane do.</p>
+      </div>
+      <div class="connect" id="contact">
+        <p class="eyebrow">CONNECT WITH US</p>
+        <a href="#" onclick="return false;">☘ WhatsApp Community</a>
+        <a href="#" onclick="return false;">◎ Instagram</a>
+        <a href="mailto:hello@tapriwala.in">✉ hello@tapriwala.in</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand">Tapri <b>WALA</b> ☕</div>
+    <span>© 2026 Tapri Wala. All Rights Reserved.</span>
+    <div><a href="#">Privacy</a><a href="#">Terms</a></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
